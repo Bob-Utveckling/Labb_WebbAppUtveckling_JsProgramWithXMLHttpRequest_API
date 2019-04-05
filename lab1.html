@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css_media1.css">
+    <title>-- API Question and answer -- </title>
+</head>
+
+
+<body>
+
+<div class="forUserHeader">
+    <span id="userCategory"></span>
+    <span id="userNumQuestions"></span>
+    <span id="userAtQuestion"></span>
+    <span id="start">Start!</span>
+    <span id="finish">All questions answered</span>
+    <span id="box">_____</span>
+</div>
+
+<div class="showCategoryPreference">
+    <div id="selectCategory">Select category:</div>
+    <div id="allCategoriesHolder" onclick="fadeOutDivClass_fadeInDivClass('showCategoryPreference', 'showHowManyQuestPref');">
+            <div id="category1" onClick="setCategory(this.innerHTML);">Any Category</div>
+            <div id="category2" onClick="setCategory (this.innerHTML); ">General Knowledge</div>
+            <div id="category1" onClick="setCategory (this.innerHTML);">Entertainment: Books</div>
+            <div id="category2" onClick="setCategory (this.innerHTML);">Entertainment: Film</div>
+            <div id="category1" onClick="setCategory (this.innerHTML);">Entertainment: Music</div>
+            <div id="category2" onClick="setCategory (this.innerHTML);">Entertainment: Video Games</div>
+            <div id="category1" onClick="setCategory (this.innerHTML);">Entertainment: Board Games</div>
+            <div id="category2" onClick="setCategory (this.innerHTML);">Science & Nature</div>
+            <div id="category1" onClick="setCategory (this.innerHTML);">Science: Computers</div>
+            <div id="category2" onClick="setCategory (this.innerHTML);">Science: Mathematics</div>
+            <div id="category1" onClick="setCategory (this.innerHTML);">Mythology</div>
+            <div id="category2" onClick="setCategory (this.innerHTML);">Sports</div>
+            <div id="category1" onClick="setCategory (this.innerHTML);">Geography</div>
+            <div id="category2" onClick="setCategory (this.innerHTML);">History</div>
+            <div id="category1" onClick="setCategory (this.innerHTML);">Politics</div>
+    </div>
+</div>
+
+<div class="showHowManyQuestPref" onclick="fadeOutDivClass_fadeInDivClass('showHowManyQuestPref','mainPart');">
+    <div id="selectNumberOfQuestions">Select number of questions:</div>
+        <div id="allQuestionsHolder" onclick="startMainPart();">
+            <div id="numOfQues1" onClick="setNumOfQuestions(1)">1</div>
+            <div id="numOfQues2" onClick="setNumOfQuestions(2)">2</div>
+            <div id="numOfQues1" onClick="setNumOfQuestions(4)">4</div>
+            <div id="numOfQues2" onClick="setNumOfQuestions(5)">5</div>
+            <div id="numOfQues1" onClick="setNumOfQuestions(10)">10</div>
+            <div id="numOfQues2" onClick="setNumOfQuestions(12)">12</div>
+            <div id="numOfQues1" onClick="setNumOfQuestions(15)">15</div>
+            <div id="numOfQues2" onClick="setNumOfQuestions(20)">20</div>
+    </div>
+</div>
+
+<div class="mainPart">
+    <div id="question">Question</div>
+
+    <div class="contentOnTheRight">
+        <div id="showRightAnswerButton" style="cursor:pointer" onclick="showRightAnswer();">Show right answer</div>
+    </div>
+
+    <div class="boolean_answerPanel">
+        <div id="boolean_answerPlaceHolder1" onClick="userAnswered(this.innerHTML);">boolean answer 1</div>
+        <div id="boolean_answerPlaceHolder2" onClick="userAnswered(this.innerHTML);">boolean answer 2</div>
+    </div>
+
+    <div class="multipleChoice_answerPanel">
+        <div id="multiple_answerPlaceHolder1" onClick="userAnswered(this.innerHTML);">suggested answer 1</div>
+        <div id="multiple_answerPlaceHolder2" onClick="userAnswered(this.innerHTML);">suggested answer 2</div>
+        <div id="multiple_answerPlaceHolder3" onClick="userAnswered(this.innerHTML);">suggested answer 3</div>
+        <div id="multiple_answerPlaceHolder4" onClick="userAnswered(this.innerHTML);">suggested answer 4</div>
+    </div>
+
+    <div id="resultCheck">
+        Result
+    </div>
+</div>
+
+<div class = "results">
+    <p></p>
+    Results!
+</div>
+
+<div id = "restartButton">
+        <br>
+        <a href="">Restart</a>
+</div>
+    
+<div id = "aboutButton">
+        <br>
+        <a href="javascript:about();">About</a>
+</div>
+ 
+<div id = "about">
+    About - <br>
+    Skriven av Bob <br>
+    IT-Högskolan, Utveckling av Webbapplikationer <br>
+	hos Hans Andersson
+    <hr>
+    Code written with help found at:<br><br>
+    <div id = "codeResourceWrapper">
+        <div id="codingResources">
+            https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows <br>
+            https://mediag.com/blog/popular-screen-resolutions-designing-for-all/ <br>
+            https://css-tricks.com/snippets/css/keyframe-animation-syntax/ <br>
+            https://css-tricks.com/restart-css-animation/ <br>
+            https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load <br>
+            https://stackoverflow.com/questions/8929781/css-align-to-bottom-of-page <br>
+            https://medium.freecodecamp.org/how-to-disappear-completely-2f23ddb14835 <br>
+            https://www.w3schools.com/cssref/pr_class_display.asp <br>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script src="JSFunctions.js"></script>

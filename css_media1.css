@@ -1,0 +1,373 @@
+
+@media screen and (max-width: 479px) {
+    body {
+        background-color: green;
+    }
+
+
+
+    .forUserHeader {
+        background-color: rgb(99, 99, 224);
+        margin: 5px;
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        position: fixed;
+        left: 0px;
+        width: 100%;
+        height: 100px;
+        display: inline;
+    }
+    #userCategory {
+        background-color: rgb(123, 171, 235);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        padding: 20px;
+    }
+    #userNumQuestions {
+        background-color: rgb(144, 192, 231);   
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        padding: 20px;
+    }
+    #userAtQuestion {
+        background-color: rgb(169, 203, 231);   
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        padding: 20px;
+    
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+    }
+    #start {
+        background-color: rgb(255, 255, 255);   
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        padding: 2px;
+        display: none;
+        position: fixed;
+        left:25px;
+        top: 120px;
+    
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+    }
+    #finish {
+        position: fixed;
+        left: 100px;
+        top:100px;
+        background-color: rgb(255, 255, 255);   
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        padding: 10px;
+        display: none;
+        visibility: visible;
+    
+        animation: fadein 1s;
+        -moz-animation: fadein 1s; /* Firefox */
+        -webkit-animation: fadein 1s; /* Safari and Chrome */
+        -o-animation: fadein 1s; /* Opera */
+    }
+    
+    
+    
+    .showCategoryPreference {
+        visibility: hidden;
+        /*grid-template-rows: 30px 1fr;*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr fr 1fr;
+        position: fixed;
+        left: 5%;
+    }
+    #selectCategory {
+        position: fixed;
+        top: 80px;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #allCategoriesHolder {
+        position: fixed;
+        top: 180px;
+    }
+    #category1 {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: cornflowerblue;
+        width: 400px;
+        padding: 2px;
+        cursor: pointer;
+    }
+    #category2 {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(189, 189, 241);
+        width: 400px;
+        padding: 2px;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    .showHowManyQuestPref {
+        visibility: hidden;
+        /*grid-template-rows: 30px 1fr;*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr fr 1fr;
+        position: fixed;
+        left: 5%;
+    }
+    #selectNumberOfQuestions {
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: fixed;
+        top: 80px;
+    }
+    #allQuestionsHolder {
+        position: fixed;
+        top: 180px;
+    }
+    #numOfQues1 {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: cornflowerblue;
+        width: 420px;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+    #numOfQues2 {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(189, 189, 241);
+        width: 420px;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    .mainPart {
+        display: none;
+        /*visibility: hidden; */
+        position: fixed;
+        top: 200px;
+        width: 100%;
+    }
+    .contentOnTheRight {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #showRightAnswerButton {
+        background-image: linear-gradient(to right, rgb(230, 194, 174), rgb(221, 100, 30), rgb(216, 207, 157), rgb(211, 126, 14));
+        border: 1px solid green;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    
+    
+        
+    #question {
+        background-color: orange;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid green;
+    }
+    
+    
+    .boolean_answerPanel {
+        visibility: hidden;
+        display: grid;
+        border: 1px solid green;
+        /*grid-template-rows: 30px 1fr;*/
+        background-image: linear-gradient(to right, rgb(115, 115, 230), rgb(177, 177, 231), rgb(48, 48, 233));    
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows:100px;
+    }
+    
+    #boolean_answerPlaceHolder1 {
+        background-color: bisque;
+        border: 1px solid yellow;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    #boolean_answerPlaceHolder2 {
+        background-color: bisque;
+        border: 1px solid yellow;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    .multipleChoice_answerPanel {
+        visibility: hidden;
+        display: grid;
+        border: 1px solid green;
+        background-image: linear-gradient(to right, rgb(115, 115, 230), rgb(177, 177, 231), rgb(48, 48, 233));
+        height: 100px;
+        /*grid-template-rows: 30px 1fr;*/
+        /*grid-auto-rows: 50px 50px 50px 50px; */
+        /* grid-auto-rows: min-content; */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+    
+    #multiple_answerPlaceHolder1 {
+        background-color: bisque;
+        border: 1px solid yellow;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #multiple_answerPlaceHolder1:hover {
+        background-color: rgb(248, 190, 82);
+    }
+    
+    #multiple_answerPlaceHolder2 {
+        background-color: bisque;
+        border: 1px solid yellow;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #multiple_answerPlaceHolder2:hover {
+        background-color: rgb(248, 190, 82);
+    }
+    
+    #multiple_answerPlaceHolder3 {
+        background-color: bisque;
+        border: 1px solid yellow;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #multiple_answerPlaceHolder3:hover {
+        background-color: rgb(248, 190, 82);
+    }
+    
+    #multiple_answerPlaceHolder4 {
+        background-color: bisque;
+        border: 1px solid yellow;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #multiple_answerPlaceHolder4:hover {
+        background-color: rgb(248, 190, 82);
+    }
+    
+    
+    #resultCheck {
+        position: relative;
+        top:80px;
+
+        width: 300px;
+        height: 100px;
+        background-color: rgb(156, 154, 6);
+        line-height: 100px;
+        text-align: center;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    
+    
+    #codingResources {
+        display: none;
+        background-color: beige;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+        
+    .results {
+        display: none;
+        background-color: rgb(214, 214, 85);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        position: fixed;
+        left: 10%;
+        top: 180px;
+        bottom: 20px;
+        width: 400px;
+        height: 200px;
+    
+        
+        animation: move 2s;
+        -moz-animation: move 2s; /* Firefox */
+        -webkit-animation: move 2s; /* Safari and Chrome */
+        -o-animation: move 2s; /* Opera */
+    }
+    
+    #restartButton {
+        background-color: orange;
+        width:100px;
+        height:50px;
+        position: fixed;
+        left: 100px;
+        top: 400px;
+        display: none;
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+    }
+    
+    #aboutButton {
+        background-color: orange;
+        width:100px;
+        height:50px;
+        position: fixed;
+        left: 300px;
+        top: 400px;
+        display: none;
+        text-align: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+    }
+    
+    #about {
+        background-color: rgb(231, 193, 142);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        display: none;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+    }
+    
+    #codeResourceWrapper {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 25px;
+        padding: 20px;
+    }
+    
+}
