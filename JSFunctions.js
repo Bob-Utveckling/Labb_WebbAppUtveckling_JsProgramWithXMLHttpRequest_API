@@ -30,7 +30,6 @@
             }
         }
         
-                
 
         //read which category is selected and load to XMLHttpRequest object:
         var mainPartStarted = false;
@@ -120,13 +119,6 @@
 
 
 
-        //set user selected category for the functions:
-        var category = "";
-        setCategory = function (getUserCategory) {
-            category = getUserCategory;
-            document.getElementById("userCategory").innerHTML = "category: " + category;
-        }
-
 
 
         //set a number of questions for the functions:
@@ -198,7 +190,7 @@
                 // not need to be 4,
                 // if //oneAsnwer correct, placesAvaiable set to how many needed, and num of divs for them available
                     //document.getElementsByClassName("boolean_answerPanel")[0].style.visibility="none";
-                    document.getElementsByClassName("boolean_answerPanel")[0].style.display="none";
+                    //document.getElementsByClassName("boolean_answerPanel")[0].style.display="none";
                     document.getElementsByClassName("multipleChoice_answerPanel")[0].style.visibility="visible";
 
                     var placesAvailable = ["empty","empty","empty", "empty"];
@@ -327,3 +319,103 @@
         };
         
 
+
+        //set user selected category for the functions:
+        var category = "";
+        setCategory = function (getUserCategory) {
+            category = getUserCategory;
+            //alert("set category: " + category);
+            document.getElementById("userCategory").innerHTML = "category: " + category;
+        }
+
+
+
+        document.getElementById("multiple_answerPlaceHolder1").addEventListener("click", function() {
+            userAnswered(this.innerHTML);
+        });
+        document.getElementById("multiple_answerPlaceHolder2").addEventListener("click", function() {
+            userAnswered(this.innerHTML);
+        });
+        document.getElementById("multiple_answerPlaceHolder3").addEventListener("click", function() {
+            userAnswered(this.innerHTML);
+        });
+        document.getElementById("multiple_answerPlaceHolder4").addEventListener("click", function() {
+            userAnswered(this.innerHTML);
+        });
+
+
+        document.getElementById("numOfQues1").addEventListener("click", function() {
+            setNumOfQuestions(1);
+        });
+        document.getElementById("numOfQues2").addEventListener("click", function() {
+            setNumOfQuestions(2);
+        });
+        document.getElementById("numOfQues3").addEventListener("click", function() {
+            setNumOfQuestions(4);
+        });
+        document.getElementById("numOfQues4").addEventListener("click", function() {
+            setNumOfQuestions(5);
+        });
+        document.getElementById("numOfQues5").addEventListener("click", function() {
+            setNumOfQuestions(10);
+        });
+        document.getElementById("numOfQues6").addEventListener("click", function() {
+            setNumOfQuestions(12);
+        });
+        document.getElementById("numOfQues7").addEventListener("click", function() {
+            setNumOfQuestions(15);
+        });
+        document.getElementById("numOfQues8").addEventListener("click", function() {
+            setNumOfQuestions(20);
+        });
+
+
+
+        //document.getElementById("category1").addEventListener("click", alert1);
+        //document.getElementById("category1").addEventListener("click", setCategory());
+        //document.getElementById("category1").addEventListener("click", setCategory('any'));
+        document.getElementById("category1").addEventListener("click", function() {
+            setCategory("any");
+        });
+        document.getElementById("category2").addEventListener("click", function() {
+            setCategory('General Knowledge');
+        });
+        document.getElementById("category3").addEventListener("click", function() {
+            setCategory('Entertainment: Books');
+        });
+        document.getElementById("category4").addEventListener("click", function() {
+            setCategory('Entertainment: Film');
+        });
+        document.getElementById("category5").addEventListener("click", function() {
+            setCategory('Entertainment: Music')
+        });
+        document.getElementById("category6").addEventListener("click", function() {
+            setCategory('Entertainment: Video Games')
+        });
+        document.getElementById("category7").addEventListener("click", function() {
+            setCategory('Entertainment: Board Games')
+        });
+        document.getElementById("category8").addEventListener("click", function() {
+            setCategory('Science & Nature')
+        });
+        document.getElementById("category9").addEventListener("click", function() {
+            setCategory('Science: Computers')
+        });
+        document.getElementById("category10").addEventListener("click", function() {
+            setCategory('Science: Mathematics')
+        });
+        document.getElementById("category11").addEventListener("click", function() {
+            setCategory('Mythology')
+        });
+        document.getElementById("category12").addEventListener("click", function() {
+            setCategory('Sports')
+        });
+        document.getElementById("category13").addEventListener("click", function() {
+            setCategory('Geography')
+        });
+        document.getElementById("category14").addEventListener("click", function() {
+            setCategory('History')
+        });
+        document.getElementById("category15").addEventListener("click", function() {
+            setCategory('Politics')
+        });

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="css_media1.css">
     <title>-- API Question and answer -- </title>
@@ -21,35 +22,37 @@
 <div class="showCategoryPreference">
     <div id="selectCategory">Select category:</div>
     <div id="allCategoriesHolder" onclick="fadeOutDivClass_fadeInDivClass('showCategoryPreference', 'showHowManyQuestPref');">
-            <div id="category1" onClick="setCategory(this.innerHTML);">Any Category</div>
-            <div id="category2" onClick="setCategory (this.innerHTML); ">General Knowledge</div>
-            <div id="category1" onClick="setCategory (this.innerHTML);">Entertainment: Books</div>
-            <div id="category2" onClick="setCategory (this.innerHTML);">Entertainment: Film</div>
-            <div id="category1" onClick="setCategory (this.innerHTML);">Entertainment: Music</div>
-            <div id="category2" onClick="setCategory (this.innerHTML);">Entertainment: Video Games</div>
-            <div id="category1" onClick="setCategory (this.innerHTML);">Entertainment: Board Games</div>
-            <div id="category2" onClick="setCategory (this.innerHTML);">Science & Nature</div>
-            <div id="category1" onClick="setCategory (this.innerHTML);">Science: Computers</div>
-            <div id="category2" onClick="setCategory (this.innerHTML);">Science: Mathematics</div>
-            <div id="category1" onClick="setCategory (this.innerHTML);">Mythology</div>
-            <div id="category2" onClick="setCategory (this.innerHTML);">Sports</div>
-            <div id="category1" onClick="setCategory (this.innerHTML);">Geography</div>
-            <div id="category2" onClick="setCategory (this.innerHTML);">History</div>
-            <div id="category1" onClick="setCategory (this.innerHTML);">Politics</div>
+            <!-- <div id="category1" onClick="setCategory(this.innerHTML);">Any Category</div> -->
+            <div class="category1" id="category1">Any Category</div>
+            <div class="category2" id="category2">General Knowledge</div>
+            <div class="category1" id="category3">Entertainment: Books</div>
+            <div class="category2" id="category4">Entertainment: Film</div>
+            <div class="category1" id="category5">Entertainment: Music</div>
+            <div class="category2" id="category6">Entertainment: Video Games</div>
+            <div class="category1" id="category7">Entertainment: Board Games</div>
+            <div class="category2" id="category8">Science & Nature</div>
+            <div class="category1" id="category9">Science: Computers</div>
+            <div class="category2" id="category10">Science: Mathematics</div>
+            <div class="category1" id="category11">Mythology</div>
+            <div class="category2" id="category12">Sports</div>
+            <div class="category1" id="category13">Geography</div>
+            <div class="category2" id="category14">History</div>
+            <div class="category1" id="category15">Politics</div>
     </div>
 </div>
 
 <div class="showHowManyQuestPref" onclick="fadeOutDivClass_fadeInDivClass('showHowManyQuestPref','mainPart');">
     <div id="selectNumberOfQuestions">Select number of questions:</div>
         <div id="allQuestionsHolder" onclick="startMainPart();">
-            <div id="numOfQues1" onClick="setNumOfQuestions(1)">1</div>
-            <div id="numOfQues2" onClick="setNumOfQuestions(2)">2</div>
-            <div id="numOfQues1" onClick="setNumOfQuestions(4)">4</div>
-            <div id="numOfQues2" onClick="setNumOfQuestions(5)">5</div>
-            <div id="numOfQues1" onClick="setNumOfQuestions(10)">10</div>
-            <div id="numOfQues2" onClick="setNumOfQuestions(12)">12</div>
-            <div id="numOfQues1" onClick="setNumOfQuestions(15)">15</div>
-            <div id="numOfQues2" onClick="setNumOfQuestions(20)">20</div>
+            <!-- <div class="numOfQues1" id="numOfQues1" onClick="setNumOfQuestions(1)">1</div> -->
+            <div class="numOfQues1" id="numOfQues1">1</div>
+            <div class="numOfQues2"  id="numOfQues2">2</div>
+            <div class="numOfQues1"  id="numOfQues3">4</div>
+            <div class="numOfQues2"  id="numOfQues4">5</div>
+            <div class="numOfQues1"  id="numOfQues5">10</div>
+            <div class="numOfQues2"  id="numOfQues6">12</div>
+            <div class="numOfQues1"  id="numOfQues7">15</div>
+            <div class="numOfQues2"  id="numOfQues8">20</div>
     </div>
 </div>
 
@@ -60,16 +63,17 @@
         <div id="showRightAnswerButton" style="cursor:pointer" onclick="showRightAnswer();">Show right answer</div>
     </div>
 
-    <div class="boolean_answerPanel">
-        <div id="boolean_answerPlaceHolder1" onClick="userAnswered(this.innerHTML);">boolean answer 1</div>
-        <div id="boolean_answerPlaceHolder2" onClick="userAnswered(this.innerHTML);">boolean answer 2</div>
-    </div>
-
+    <!--
+        <div class="boolean_answerPanel">
+            <div id="boolean_answerPlaceHolder1" onClick="userAnswered(this.innerHTML);">boolean answer 1</div>
+            <div id="boolean_answerPlaceHolder2" onClick="userAnswered(this.innerHTML);">boolean answer 2</div>
+        </div>
+    -->
     <div class="multipleChoice_answerPanel">
-        <div id="multiple_answerPlaceHolder1" onClick="userAnswered(this.innerHTML);">suggested answer 1</div>
-        <div id="multiple_answerPlaceHolder2" onClick="userAnswered(this.innerHTML);">suggested answer 2</div>
-        <div id="multiple_answerPlaceHolder3" onClick="userAnswered(this.innerHTML);">suggested answer 3</div>
-        <div id="multiple_answerPlaceHolder4" onClick="userAnswered(this.innerHTML);">suggested answer 4</div>
+        <div id="multiple_answerPlaceHolder1">suggested answer 1</div>
+        <div id="multiple_answerPlaceHolder2">suggested answer 2</div>
+        <div id="multiple_answerPlaceHolder3">suggested answer 3</div>
+        <div id="multiple_answerPlaceHolder4">suggested answer 4</div>
     </div>
 
     <div id="resultCheck">

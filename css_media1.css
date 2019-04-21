@@ -92,7 +92,7 @@
         position: fixed;
         top: 180px;
     }
-    #category1 {
+    .category1 {
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: cornflowerblue;
@@ -100,7 +100,7 @@
         padding: 2px;
         cursor: pointer;
     }
-    #category2 {
+    .category2 {
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: rgb(189, 189, 241);
@@ -130,7 +130,7 @@
         position: fixed;
         top: 180px;
     }
-    #numOfQues1 {
+    .numOfQues1 {
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: cornflowerblue;
@@ -139,7 +139,7 @@
         text-align: center;
         cursor: pointer;
     }
-    #numOfQues2 {
+    .numOfQues2 {
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: rgb(189, 189, 241);
